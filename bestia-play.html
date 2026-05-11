@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+  <meta charset="UTF-8">
+  <title>BESTIA - PROYECCIÓN</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+      margin:0;
+      background:#000;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      font-family:'IBM Plex Serif', serif;
+    }
+
+    video{
+      width:90%;
+      max-width:1000px;
+    }
+
+    .controls{
+      margin-top:20px;
+      display:flex;
+      gap:20px;
+    }
+
+    a{
+      color:#8fa876;
+      text-decoration:none;
+      font-size:13px;
+    }
+
+    a:hover{
+      color:#fff;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <video controls autoplay>
+    <source src="../video/bestia.mp4" type="video/mp4">
+  </video>
+
+  <div class="controls">
+
+    <a href="bestia.html">← volver ficha</a>
+
+    <a href="../index.html">← volver inicio</a>
+
+  </div>
+
+</body>
+
+</html>
