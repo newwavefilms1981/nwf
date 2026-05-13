@@ -3,231 +3,396 @@
 }
 
 body{
+
   margin:0;
-  color:#d6c15f;
+
   font-family:'IBM Plex Serif', serif;
 
-  /* fondo cine clásico / film noir */
+  color:#d8c98a;
+
   background:
-    radial-gradient(circle at 50% 40%, #3a3a3a 0%, #151515 35%, #050505 65%, #000 100%),
-    linear-gradient(to bottom, #2a2a2a, #000);
+    radial-gradient(circle at 50% 40%,
+    #3d3d3d 0%,
+    #171717 35%,
+    #060606 65%,
+    #000 100%);
 
   position:relative;
+
+  overflow-x:hidden;
 }
 
-/* viñeta tipo proyector */
+/* VIÑETA */
+
 body::before{
+
   content:"";
+
   position:fixed;
+
   top:0;
   left:0;
+
   width:100%;
   height:100%;
+
   pointer-events:none;
 
-  background:radial-gradient(circle, transparent 45%, rgba(0,0,0,0.75) 100%);
+  background:
+    radial-gradient(circle,
+    transparent 45%,
+    rgba(0,0,0,0.78) 100%);
 }
 
-/* =========================
-   LOGO
-========================= */
+/* LOGO */
 
 .logo{
+
   width:100%;
+
   display:flex;
+
   justify-content:center;
-  align-items:center;
+
   margin-top:40px;
 }
 
 .logo img{
-  width:180px;
-  height:auto;
+
+  width:190px;
+
   display:block;
+
+  max-width:90%;
 }
 
-/* =========================
-   INDEX (MUSEO)
-========================= */
+/* INTRO */
+
+.intro{
+
+  max-width:760px;
+
+  margin:30px auto 10px auto;
+
+  padding:0 30px;
+
+  text-align:center;
+
+  line-height:1.9;
+
+  font-size:15px;
+
+  color:#f5e6aa;
+}
+
+/* INDEX */
 
 .container{
-  display:grid;
-  grid-template-columns:repeat(3, 1fr);
-  gap:40px;
 
-  max-width:1100px;
-  margin:0 auto;
-  padding:40px;
+  display:grid;
+
+  grid-template-columns:repeat(3, 1fr);
+
+  gap:50px;
+
+  max-width:1200px;
+
+  margin:40px auto;
+
+  padding:0 40px 40px 40px;
 }
 
 .card{
+
   text-decoration:none;
-  color:#d6c15f;
+
+  color:#d8c98a;
 }
 
 .card img{
+
   width:100%;
+
   display:block;
-  border:1px solid #222;
+
+  border:1px solid #333;
+
   transition:0.3s;
 }
 
 .card img:hover{
+
   transform:scale(1.02);
-  border-color:#555;
+
+  border-color:#777;
 }
 
 .card p{
-  font-size:13px;
-  line-height:1.6;
-  color:#a89a56;
-  margin-top:12px;
+
+  margin-top:14px;
+
+  font-size:14px;
+
+  line-height:1.8;
+
+  color:#ffffff;
 }
 
-/* =========================
-   FILMS
-========================= */
+/* CONTACTO */
+
+.contact{
+
+  text-align:center;
+
+  padding:20px 20px 50px 20px;
+
+  font-size:15px;
+
+  color:#ffffff;
+}
+
+.contact a{
+
+  color:#fff0b3;
+
+  text-decoration:none;
+}
+
+.contact a:hover{
+
+  color:#ffffff;
+}
+
+/* FILMS */
 
 .film-page{
+
   min-height:100vh;
 
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-
-  padding:20px;
+  padding:30px;
 }
 
 .film-container{
-  display:grid;
-  grid-template-columns:320px 1fr;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:flex-start;
+
   gap:60px;
 
-  max-width:1400px;
+  max-width:1300px;
+
   margin:0 auto;
 
-  width:100%;
-  padding:20px 60px;
-
-  align-items:start;
+  padding:20px 40px;
 }
 
 .film-poster{
+
   width:320px;
-  border:1px solid #222;
+
+  border:1px solid #333;
+
   display:block;
+
+  max-width:100%;
 }
 
 .film-text{
-  width:100%;
-  max-width:none;
 
-  font-size:13px;
-  line-height:1.8;
+  max-width:600px;
 
-  color:#a89a56;
+  font-size:14px;
+
+  line-height:1.9;
+
+  color:#d0c28a;
 }
 
 .film-text h2{
-  color:#d6c15f;
+
+  color:#f1de9b;
+
   font-weight:300;
-  margin-top:0;
+
+  letter-spacing:2px;
 }
+
+/* IFRAME */
+
+iframe{
+
+  width:100%;
+
+  max-width:1000px;
+
+  display:block;
+
+  margin:0 auto;
+}
+
+/* CONTROLS */
+
+.controls{
+
+  text-align:center;
+
+  margin-top:30px;
+}
+
+.controls a{
+
+  display:inline-block;
+
+  margin:0 10px;
+
+  color:#c7d7a1;
+
+  text-decoration:none;
+
+  font-size:12px;
+}
+
+.controls a:hover{
+
+  color:#fff;
+}
+
+/* FOOTER FILMS */
 
 .film-footer{
+
   text-align:center;
-  margin-top:20px;
+
+  margin-top:40px;
 }
 
-/* BOTONES */
-
 .watch{
+
   display:inline-block;
 
   padding:10px 16px;
 
-  border:1px solid #8fa876;
+  border:1px solid #b7c98d;
 
-  color:#8fa876;
+  color:#dce8bb;
+
   text-decoration:none;
 
   font-size:12px;
 }
 
 .watch:hover{
+
   color:#fff;
+
   border-color:#fff;
 }
 
 .back{
+
   display:block;
 
-  margin-top:10px;
+  margin-top:14px;
 
-  color:#8fa876;
+  color:#c7d7a1;
+
   text-decoration:none;
 
   font-size:12px;
 }
 
 .back:hover{
+
   color:#fff;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* RESPONSIVE */
 
 @media (max-width:900px){
 
   .container{
-    grid-template-columns:repeat(2, 1fr);
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+
+    padding:0 20px 40px 20px;
+  }
+
+  .card{
+
+    max-width:420px;
+
+    margin:0 auto;
   }
 
   .film-container{
-    grid-template-columns:1fr;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
   }
 
+  .film-text{
+
+    max-width:90%;
+  }
+
+  iframe{
+
+    height:260px;
+  }
 }
 
 @media (max-width:600px){
 
-  .container{
-    grid-template-columns:1fr;
+  .logo img{
+
+    width:150px;
+  }
+
+  .intro{
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    padding:0 20px;
+  }
+
+  .film-page{
+
+    padding:20px 10px;
   }
 
   .film-poster{
+
     width:240px;
   }
 
-  .logo img{
-    width:140px;
+  .film-text{
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    max-width:100%;
   }
 
-  .film-container{
-    padding:20px;
+  .contact{
+
+    font-size:14px;
   }
-.contact-btn{
-  display:inline-block;
 
-  padding:12px 24px;
+  iframe{
 
-  border:1px solid #8fa876;
-  color:#8fa876;
-
-  text-decoration:none;
-
-  font-size:13px;
-  letter-spacing:3px;
-
-  background:transparent;
-
-  transition:0.3s;
-}
-
-.contact-btn:hover{
-  color:#fff;
-  border-color:#fff;
-  transform:scale(1.05);
-}
+    height:220px;
+  }
 }
