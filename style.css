@@ -17,8 +17,6 @@ body{
     #060606 65%,
     #000 100%);
 
-  position:relative;
-
   overflow-x:hidden;
 }
 
@@ -27,15 +25,11 @@ body{
 body::before{
 
   content:"";
-
   position:fixed;
-
   top:0;
   left:0;
-
   width:100%;
   height:100%;
-
   pointer-events:none;
 
   background:
@@ -49,20 +43,15 @@ body::before{
 .logo{
 
   width:100%;
-
   display:flex;
-
   justify-content:center;
-
   margin-top:40px;
 }
 
 .logo img{
 
   width:190px;
-
   display:block;
-
   max-width:90%;
 }
 
@@ -71,15 +60,11 @@ body::before{
 .intro{
 
   max-width:760px;
-
   margin:30px auto 10px auto;
-
   padding:0 30px;
 
   text-align:center;
-
   line-height:1.9;
-
   font-size:15px;
 
   color:#f5e6aa;
@@ -90,51 +75,39 @@ body::before{
 .container{
 
   display:grid;
-
   grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
-
   gap:50px;
 
   max-width:1200px;
-
   margin:40px auto;
-
   padding:0 40px 40px 40px;
 }
 
 .card{
 
   text-decoration:none;
-
   color:#d8c98a;
 }
 
 .card img{
 
   width:100%;
-
   display:block;
 
   border:1px solid #333;
-
   transition:0.3s;
 }
 
 .card img:hover{
-
   transform:scale(1.02);
-
   border-color:#777;
 }
 
 .card p{
 
   margin-top:14px;
-
   font-size:14px;
-
   line-height:1.8;
-
   color:#ffffff;
 }
 
@@ -143,23 +116,19 @@ body::before{
 .contact{
 
   text-align:center;
-
   padding:20px 20px 50px 20px;
 
   font-size:15px;
-
   color:#ffffff;
 }
 
 .contact a{
 
   color:#fff0b3;
-
   text-decoration:none;
 }
 
 .contact a:hover{
-
   color:#ffffff;
 }
 
@@ -168,55 +137,41 @@ body::before{
 .film-page{
 
   min-height:100vh;
-
   padding:30px;
 }
 
 .film-container{
 
   display:flex;
-
   justify-content:center;
-
   align-items:flex-start;
 
   gap:60px;
-
   max-width:1300px;
-
   margin:0 auto;
-
   padding:20px 40px;
 }
 
 .film-poster{
 
   width:320px;
-
-  border:1px solid #333;
-
-  display:block;
-
   max-width:100%;
+  border:1px solid #333;
+  display:block;
 }
 
 .film-text{
 
   max-width:600px;
-
   font-size:14px;
-
   line-height:1.9;
-
   color:#d0c28a;
 }
 
 .film-text h2{
 
   color:#f1de9b;
-
   font-weight:300;
-
   letter-spacing:2px;
 }
 
@@ -225,11 +180,8 @@ body::before{
 iframe{
 
   width:100%;
-
   max-width:1000px;
-
   display:block;
-
   margin:0 auto;
 }
 
@@ -238,74 +190,60 @@ iframe{
 .controls{
 
   text-align:center;
-
   margin-top:30px;
 }
 
 .controls a{
 
   display:inline-block;
-
   margin:0 10px;
 
   color:#c7d7a1;
-
   text-decoration:none;
-
   font-size:12px;
 }
 
 .controls a:hover{
-
   color:#fff;
 }
 
-/* FOOTER FILMS */
+/* FOOTER */
 
 .film-footer{
 
+  width:100%;
   text-align:center;
-
-  margin-top:40px;
+  margin-top:50px;
 }
 
 .watch{
 
   display:inline-block;
-
   padding:10px 16px;
 
   border:1px solid #b7c98d;
-
   color:#dce8bb;
 
   text-decoration:none;
-
   font-size:12px;
 }
 
 .watch:hover{
-
   color:#fff;
-
   border-color:#fff;
 }
 
 .back{
 
-  display:block;
-
+  display:inline-block;
   margin-top:14px;
 
   color:#c7d7a1;
-
   text-decoration:none;
-
   font-size:12px;
 }
 
 .back:hover{
-
   color:#fff;
 }
 
@@ -316,21 +254,17 @@ iframe{
   .film-container{
 
     flex-direction:column;
-
     align-items:center;
-
     text-align:center;
 
     padding:20px;
   }
 
   .film-text{
-
     max-width:90%;
   }
 
   iframe{
-
     height:260px;
   }
 }
@@ -338,45 +272,34 @@ iframe{
 @media (max-width:600px){
 
   .logo img{
-
     width:150px;
   }
 
   .intro{
-
     font-size:14px;
-
     line-height:1.8;
-
     padding:0 20px;
   }
 
   .film-page{
-
     padding:20px 10px;
   }
 
   .film-poster{
-
     width:240px;
   }
 
   .film-text{
-
     font-size:14px;
-
     line-height:1.8;
-
     max-width:100%;
   }
 
   .contact{
-
     font-size:14px;
   }
 
   iframe{
-
     height:220px;
   }
 }
